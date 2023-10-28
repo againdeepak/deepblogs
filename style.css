@@ -1,0 +1,198 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+  
+}
+.container{
+    width: 100vw;
+    margin:0 auto;
+  padding:2rem;
+  background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,0.8128501400560224) 0%, rgba(36,36,192,1) 0%, rgba(12,154,234,1) 100%, rgba(69,84,87,1) 100%);
+  
+}
+a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+}
+.header_container{
+    margin-bottom: 2.8rem;
+}
+.header_title{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin:0.3rem;
+    font-size:1.7rem;
+    color:white;
+    line-height: 2rem;
+
+}
+.header_desc{
+   text-align: justify;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    max-width:570px ;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    
+}
+.main_container{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin:0.3rem auto;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,0.8128501400560224) 0%, rgba(36,36,192,1) 0%, rgba(12,154,234,1) 100%, rgba(69,84,87,1) 100%);
+    
+}
+.card_container{
+    display: flex;
+    flex-direction: column;
+    border:2px solid rgb(191, 255, 0);
+    justify-content: space-between;
+    border-radius: 1%;
+    height: 25rem;
+    
+    /* padding:0.2rem; */
+}
+.img_container{
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+
+}
+.card_image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.title_container{
+    display: flex;
+    color:white;
+    flex-direction: column;
+    padding:1rem;
+}
+.card_container:hover .card_image{
+    transform: scale(1.1);
+    transition-duration: 300ms;
+    
+}
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+    color:rgb(255, 246, 246);
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+.card_title_anchor:hover .card_title{
+    color:rgb(255, 225, 0);
+}
+.card_desc{
+    color:rgb(255, 255, 255);
+    font-size: 1rem;
+    text-align: justify;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+    align-items: flex-end;
+    
+}
+.footer_avtar_container{
+    /* border:1px solid black; */
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+.avtar_pic{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border:1px solid rgb(132, 127, 127);
+    background-color: azure;
+    border-radius: 50%;
+}
+.avtar_info{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+}
+.name{
+    color: rgb(191, 255, 0);
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.date{
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.footer_title_desc{
+    border:1px solid black;
+    padding:0.4rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    border-radius: 10%;
+    color:rgb(82, 78, 78);
+    background-color: aliceblue;
+}
+@media (min-width:1600px) and(max-width:2263){
+    .main_container{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+@media (min-width:690px) and (max-width:999px){
+    .main_container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+    }
+    .img_container{
+        position: relative;
+        overflow: hidden;
+        height: 14rem;
+    
+    }
+    .card_desc{
+        text-align: justify;
+    }
+}
+@media (min-width:250px) and (max-width:689px){
+    .main_container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+    }
+    .img_container{
+        position: relative;
+        overflow: hidden;
+        height: 15rem;
+       
+    
+    }
+    .card_desc{
+        text-align: justify;
+    }
+}
+@media (min-width:999px) and (max-width:1230px){
+    .main_container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .img_container{
+        position: relative;
+        overflow: hidden;
+        height: 15rem;
+       
+    
+    }
+    .card_desc{
+        text-align: justify;
+    }
+}
