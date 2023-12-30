@@ -51,9 +51,9 @@ a{
 .card_container{
     display: flex;
     flex-direction: column;
-    border:2px solid rgb(191, 255, 0);
+    border:2px solid rgb(255, 255, 255);
     justify-content: space-between;
-    border-radius: 1%;
+    /* border-radius: 1%; */
     height: 25rem;
     
     /* padding:0.2rem; */
