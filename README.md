@@ -1,2 +1,4 @@
 # chekout
-🔗 [https//:deepblogs.netlify.app](https://deepblogs.netlify.app/)https://deepblogs.netlify.app/
+🔗 [https//:deepblogs.netlify.app]
+```link``` 
+https://deepblogs.netlify.app/
